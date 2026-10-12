@@ -1,0 +1,14 @@
+{
+  "name": "caster-comms-cloudflare",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "login": "wrangler login",
+    "create-db": "wrangler d1 create caster-comms-db",
+    "setup-db": "wrangler d1 migrations apply DB --remote",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.92.0"
+  }
+}
